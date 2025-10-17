@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ẩm Thực Việt Nam</title>
+    <style>
+        /* Skip link */
+        .skip {
+            position: absolute;
+            left: -10000px;
+            background: white;
+            padding: 8px;
+        }
+        .skip:focus {
+            position: static;
+        }
+        
+        /* Basic styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #c62828;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #d32f2f;
+            display: inline-block;
+            width: 80%;
+            padding: 15px 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        
+        nav img {
+            width: 10%;
+            vertical-align: middle;
+        }
+        
+        main {
+            background-color: #fafafa;
+            font-size: 18px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background-color: #c62828;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Georgia', serif;
+            color: #ffffff;
+            margin: 0;
+        }
+        
+        h2 {
+            color: #c62828;
+            border-bottom: 2px solid #ffcdd2;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            line-height: 1.8;
+        }
+        
+        /* Grid system */
+        .grid {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            justify-content: space-between;
+            align-items: start;
+            row-gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Flex system */
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .dish-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+        }
+        
+        .ingredient-list {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #c62828;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 100%;
+            }
+            
+            nav {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip">Skip to Main Content</a>
+    
+    <header>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h1>Khám Phá Ẩm Thực Việt Nam</h1>
+            <p style="color: #ffcdd2; margin: 10px 0 0 0;">Hương vị quê hương trong từng món ăn</p>
+        </div>
+    </header>
+    
+    <nav style="text-align: center;">
+        <ul>
+            <li><a href="#pho">🍜 Phở</a></li>
+            <li><a href="#bun-cha">🥢 Bún Chả</a></li>
+            <li><a href="#banh-mi">🥖 Bánh Mì</a></li>
+            <li><a href="#goi-cuon">🌯 Gỏi Cuốn</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-content">
+        <section id="pho">
+            <h2>Phở - Tinh Hoa Ẩm Thực Việt</h2>
+            <p>Món ăn truyền thống với hương vị đậm đà, nước dùng thơm ngon từ xương hầm và gia vị đặc trưng.</p>
+            
+            <div class="grid">
+                <div class="ingredient-list">
+                    <h3>Nguyên Liệu Chính</h3>
+                    <ul>
+                        <li>Bánh phở tươi</li>
+                        <li>Thịt bò các loại</li>
+                        <li>Xương bò hầm</li>
+                        <li>Gia vị truyền thống</li>
+                        <li>Rau thơm ăn kèm</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Đặc Điểm</h3>
+                    <p>Phở Hà Nội có vị thanh nhẹ, nước dùng trong. Phở Sài Gòn ngọt đậm hơn, ăn kèm nhiều rau sống.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="bun-cha">
+            <h2>Bún Chả Hà Nội</h2>
+            <p>Món ăn đường phố nổi tiếng với chả viên và chả miếng nướng thơm, ăn kèm bún và nước mắm pha.</p>
+            
+            <div class="flex">
+                <div class="dish-card">
+                    <h3>Chả Viên</h3>
+                    <p>Thịt ba chỉ xay nhuyễn, nướng trên than hoa</p>
+                </div>
+                <div class="dish-card">
+                    <h3>Chả Miếng</h3>
+                    <p>Thịt ba chỉ thái lát, ướp gia vị đặc trưng</p>
+                </div>
+                <div class="dish-card">
+                    <h3>Nước Mắm Pha</h3>
+                    <p>Pha chế công phu với tỏi, ớt, đường, chanh</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="banh-mi">
+            <h2>Bánh Mì Việt Nam</h2>
+            <p>Sự kết hợp hoàn hảo giữa ẩm thực Pháp và Việt Nam, được vinh danh là sandwich ngon nhất thế giới.</p>
+            
+            <div class="grid">
+                <div>
+                    <h3>Bánh Mì Thịt</h3>
+                    <p>Kết hợp pate, thịt nguội, chả lụa với rau sống và gia vị</p>
+                </div>
+                <div>
+                    <h3>Bánh Mì Chảo</h3>
+                    <p>Thịt bò xào với trứng ốp la, ăn kèm bánh mì giòn</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="goi-cuon">
+            <h2>Gỏi Cuốn Tươi Ngon</h2>
+            <p>Món cuốn thanh đạm với bánh tráng, rau sống, tôm thịt và bún, chấm nước sốt đặc trưng.</p>
+            
+            <div class="flex">
+                <div class="dish-card">
+                    <h3>Gỏi Cuốn Tôm Thịt</h3>
+                    <p>Cuốn truyền thống với tôm luộc, thịt heo và rau sống</p>
+                </div>
+                <div class="dish-card">
+                    <h3>Gỏi Cuốn Chay</h3>
+                    <p>Phiên bản chay với đậu hủ và rau củ tươi</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Ẩm Thực Việt Nam | Di sản văn hóa ẩm thực dân tộc</p>
+    </footer>
+</body>
+</html>
